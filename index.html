@@ -5,12 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link href="./js/app.js" defer />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./js/app.js" defer></script>
     <title>Mentor | Sunnyside Landing Page</title>
   </head>
   <body>
     <header class="header">
-      <div class="header__content">
+      <div class="header__nav-bar">
         <img src="./images/logo.svg" alt="Sunnyside Logo" />
         <nav class="nav">
           <ul class="nav__list">
@@ -24,7 +30,7 @@
               <a href="#" class="nav__link">Projects</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Contact</a>
+              <a href="#" class="nav__link nav__link--cta">Contact</a>
             </li>
           </ul>
         </nav>
@@ -35,6 +41,11 @@
         </div>
       </div>
       <h1 class="header__heading">We Are Creatives</h1>
+      <img
+        src="./images/icon-arrow-down.svg"
+        alt="Navigate Down"
+        class="header__img"
+      />
     </header>
     <main class="content">
       <section class="about-us">
@@ -60,16 +71,16 @@
             <a href="#" class="block__link block__link--pink">Learn more</a>
           </div>
           <div class="content__block graphic-design">
-            <h2 class="block__header">Graphic design</h2>
-            <p class="block__txt">
+            <h2 class="block__header block__header--cyan">Graphic design</h2>
+            <p class="block__txt block__txt--cyan">
               Great design makes you memorable. We deliver artwork that
               underscores your brand message and captures potential clients’
               attention.
             </p>
           </div>
           <div class="content__block photography">
-            <h2 class="block__header">Photography</h2>
-            <p class="block__txt">
+            <h2 class="block__header block__header--blue">Photography</h2>
+            <p class="block__txt block__txt--blue">
               Increase your credibility by getting the most stunning,
               high-quality photos that improve your business image.
             </p>
@@ -81,14 +92,14 @@
           <h2 class="testimonials__header">Client Testimonials</h2>
           <div class="tesimonials">
             <div class="testimonial">
+              <div class="testimonial__image-wrapper">
+                <img
+                  src="./images/image-emily.jpg"
+                  alt="Testimonial Image"
+                  class="testimonial__img"
+                />
+              </div>
               <p class="testimonial__quote">
-                <div class="testimonial__image-wrapper">
-                  <img
-                    src="./images/image-emily.jpg"
-                    alt="Testimonial Image"
-                    class="testimonial__img"
-                  />
-                </div>
                 We put our trust in Sunnyside and they delivered, making sure
                 our needs were met and deadlines were always hit.
               </p>
@@ -149,23 +160,46 @@
     </main>
     <footer class="footer">
       <div class="footer__content">
-        <h4 class="footer__header">sunnyside</h4>
+        <img src="./images/logo-cyan.svg" alt="Sunnyside Logo" />
         <nav class="footer__nav">
           <ul class="footer-nav__list">
-            <li class="footer-nav__item"><a href="#" class="footer-nav__link">About</a></li>
-            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Services</a></li>
-            <li class="footer-nav__item"><a href="#" class="footer-nav__link">Projects</a></li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">About</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Services</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__link">Projects</a>
+            </li>
           </ul>
         </nav>
         <div class="footer__social-links">
-          <div class="social__link"><img src="./images/icon-facebook.svg" alt="Facebook"><a href="#"></a></img></div>
+          <a href="#" class="social__link"
+            ><img src="./images/icon-facebook.svg" alt="Facebook"
+          /></a>
+          <a href="#" class="social__link"
+            ><img src="./images/icon-instagram.svg" alt="Instagram"
+          /></a>
+          <a href="#" class="social__link"
+            ><img src="./images/icon-twitter.svg" alt="Twitter"
+          /></a>
+          <a href="#" class="social__link"
+            ><img src="./images/icon-pinterest.svg" alt="Pintrest"
+          /></a>
+          <!-- <div class="social__link"><img src="./images/icon-facebook.svg" alt="Facebook"><a href="#"></a></img></div>
           <div class="social__link"><img src="./images/icon-instagram.svg" alt="Instagram"><a href="#"></a></img></div>
           <div class="social__link"><img src="./images/icon-twitter.svg" alt="Twitter"><a href="#"></a></img></div>
-          <div class="social__link"><img src="./images/icon-pinterest.svg" alt="Pintrest"><a href="#"></a></img></div>
+          <div class="social__link"><img src="./images/icon-pinterest.svg" alt="Pintrest"><a href="#"></a></img></div> -->
         </div>
       </div>
-      <span class="footer__attribution">Challenge By 
-        <a href="" target="_blank" class="attribution__link">Frontend Mentor</a></span>. Coded By <a href="#">Karl Matthews</a>.
+      <div class="footer__attribution">
+        <p>
+          Challenge by
+          <a href="" class="attribution__link">Frontend Mentor</a> Coded By
+          <a href="#" class="attribution__link">Karl Matthews</a>
+        </p>
+      </div>
     </footer>
   </body>
 </html>
