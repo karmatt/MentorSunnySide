@@ -16,41 +16,43 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__nav-bar">
-        <img src="./images/logo.svg" alt="Sunnyside Logo" />
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#" class="nav__link">About</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Services</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link">Projects</a>
-            </li>
-            <li class="nav__item">
-              <a href="#" class="nav__link nav__link--cta">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="hamburger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
+      <div class="header__content">
+        <div class="header__nav-bar">
+          <img src="./images/logo.svg" alt="Sunnyside Logo" />
+          <nav class="nav nav--hidden">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Services</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Projects</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link nav__link--cta">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="hamburger hamburger--active">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
         </div>
+        <h1 class="header__heading">We Are Creatives</h1>
+        <img
+          src="./images/icon-arrow-down.svg"
+          alt="Navigate Down"
+          class="header__img"
+        />
       </div>
-      <h1 class="header__heading">We Are Creatives</h1>
-      <img
-        src="./images/icon-arrow-down.svg"
-        alt="Navigate Down"
-        class="header__img"
-      />
     </header>
     <main class="content">
       <section class="about-us">
         <div class="about-us__content">
-          <div class="egg"></div>
+          <div class="content__block content__block--half egg"></div>
           <div class="content__block brand">
             <h2 class="block__header">Transform your brand</h2>
             <p class="block__txt">
@@ -60,7 +62,7 @@
             </p>
             <a href="#" class="block__link block__link--yellow">Learn more</a>
           </div>
-          <div class="drink"></div>
+          <div class="content__block content__block--half drink"></div>
           <div class="content__block right-audience">
             <h2 class="block__header">Stand out to the right audience</h2>
             <p class="block__txt">
@@ -70,7 +72,7 @@
             </p>
             <a href="#" class="block__link block__link--pink">Learn more</a>
           </div>
-          <div class="content__block graphic-design">
+          <div class="content__block content__block--long graphic-design">
             <h2 class="block__header block__header--cyan">Graphic design</h2>
             <p class="block__txt block__txt--cyan">
               Great design makes you memorable. We deliver artwork that
@@ -78,7 +80,7 @@
               attention.
             </p>
           </div>
-          <div class="content__block photography">
+          <div class="content__block content__block--long photography">
             <h2 class="block__header block__header--blue">Photography</h2>
             <p class="block__txt block__txt--blue">
               Increase your credibility by getting the most stunning,
@@ -90,7 +92,7 @@
       <section class="testimonials">
         <div class="testimonials__content">
           <h2 class="testimonials__header">Client Testimonials</h2>
-          <div class="tesimonials">
+          <div class="testimonials">
             <div class="testimonial">
               <div class="testimonial__image-wrapper">
                 <img
@@ -146,21 +148,21 @@
         </div>
       </section>
       <section class="gallery">
-        <div class="image-gallery">
-          <div class="image-gallery__left">
-            <div class="image-gallery__milk"></div>
-            <div class="image-gallery__orange"></div>
-          </div>
-          <div class="image-gallery__right">
-            <div class="image-gallery__cone"></div>
-            <div class="image-gallery__sugar"></div>
-          </div>
+        <div class="gallery__content">
+          <div class="gallery__milk"></div>
+          <div class="gallery__orange"></div>
+          <div class="gallery__cone"></div>
+          <div class="gallery__sugar"></div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="footer__content">
-        <img src="./images/logo-cyan.svg" alt="Sunnyside Logo" />
+        <img
+          src="./images/logo-cyan.svg"
+          class="footer__logo"
+          alt="Sunnyside Logo"
+        />
         <nav class="footer__nav">
           <ul class="footer-nav__list">
             <li class="footer-nav__item">
@@ -175,28 +177,24 @@
           </ul>
         </nav>
         <div class="footer__social-links">
-          <a href="#" class="social__link"
-            ><img src="./images/icon-facebook.svg" alt="Facebook"
-          /></a>
-          <a href="#" class="social__link"
-            ><img src="./images/icon-instagram.svg" alt="Instagram"
-          /></a>
-          <a href="#" class="social__link"
-            ><img src="./images/icon-twitter.svg" alt="Twitter"
-          /></a>
-          <a href="#" class="social__link"
-            ><img src="./images/icon-pinterest.svg" alt="Pintrest"
-          /></a>
-          <!-- <div class="social__link"><img src="./images/icon-facebook.svg" alt="Facebook"><a href="#"></a></img></div>
-          <div class="social__link"><img src="./images/icon-instagram.svg" alt="Instagram"><a href="#"></a></img></div>
-          <div class="social__link"><img src="./images/icon-twitter.svg" alt="Twitter"><a href="#"></a></img></div>
-          <div class="social__link"><img src="./images/icon-pinterest.svg" alt="Pintrest"><a href="#"></a></img></div> -->
+          <a href="#" class="social__link">
+            <img src="./images/icon-facebook.svg" alt="Facebook" />
+          </a>
+          <a href="#" class="social__link">
+            <img src="./images/icon-instagram.svg" alt="Instagram" />
+          </a>
+          <a href="#" class="social__link">
+            <img src="./images/icon-twitter.svg" alt="Twitter" />
+          </a>
+          <a href="#" class="social__link">
+            <img src="./images/icon-pinterest.svg" alt="Pintrest" />
+          </a>
         </div>
       </div>
       <div class="footer__attribution">
         <p>
           Challenge by
-          <a href="" class="attribution__link">Frontend Mentor</a> Coded By
+          <a href="#" class="attribution__link">Frontend Mentor</a> Coded By
           <a href="#" class="attribution__link">Karl Matthews</a>
         </p>
       </div>
