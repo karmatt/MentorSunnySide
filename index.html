@@ -19,7 +19,7 @@
       <div class="header__content">
         <div class="header__nav-bar">
           <img src="./images/logo.svg" alt="Sunnyside Logo" />
-          <nav class="nav nav--hidden">
+          <nav class="nav nav--closed">
             <ul class="nav__list">
               <li class="nav__item">
                 <a href="#" class="nav__link">About</a>
@@ -31,7 +31,11 @@
                 <a href="#" class="nav__link">Projects</a>
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__link nav__link--cta">Contact</a>
+                <a
+                  href="https://github.com/karmatt?tab=repositories"
+                  class="nav__link nav__link--cta"
+                  >Contact</a
+                >
               </li>
             </ul>
           </nav>
@@ -53,19 +57,25 @@
       <section class="about-us">
         <div class="about-us__content">
           <div class="content__block content__block--half egg"></div>
-          <div class="content__block brand">
-            <h2 class="block__header">Transform your brand</h2>
-            <p class="block__txt">
+          <div class="content__block content__block--left brand">
+            <h2 class="block__header block__header--narrow">
+              Transform your brand
+            </h2>
+            <p class="block__txt block__txt--desktop">
               We are a full-service creative agency specializing in helping
               brands grow fast. Engage your clients through compelling visuals
               that do most of the marketing for you.
             </p>
             <a href="#" class="block__link block__link--yellow">Learn more</a>
           </div>
-          <div class="content__block content__block--half drink"></div>
-          <div class="content__block right-audience">
-            <h2 class="block__header">Stand out to the right audience</h2>
-            <p class="block__txt">
+          <div
+            class="content__block content__block--left content__block--half drink"
+          ></div>
+          <div class="content__block content__block--left right-audience">
+            <h2 class="block__header block__header--narrow">
+              Stand out to the right audience
+            </h2>
+            <p class="block__txt block__txt--desktop">
               Using a collaborative formula of designers, researchers,
               photographers, videographers, and copywriters, we’ll build and
               extend your brand in digital places.
@@ -73,19 +83,23 @@
             <a href="#" class="block__link block__link--pink">Learn more</a>
           </div>
           <div class="content__block content__block--long graphic-design">
-            <h2 class="block__header block__header--cyan">Graphic design</h2>
-            <p class="block__txt block__txt--cyan">
-              Great design makes you memorable. We deliver artwork that
-              underscores your brand message and captures potential clients’
-              attention.
-            </p>
+            <div class="inner-content">
+              <h2 class="block__header block__header--cyan">Graphic design</h2>
+              <p class="block__txt block__txt--narrow block__txt--cyan">
+                Great design makes you memorable. We deliver artwork that
+                underscores your brand message and captures potential clients’
+                attention.
+              </p>
+            </div>
           </div>
           <div class="content__block content__block--long photography">
-            <h2 class="block__header block__header--blue">Photography</h2>
-            <p class="block__txt block__txt--blue">
-              Increase your credibility by getting the most stunning,
-              high-quality photos that improve your business image.
-            </p>
+            <div class="inner-content">
+              <h2 class="block__header block__header--blue">Photography</h2>
+              <p class="block__txt block__txt--narrow block__txt--blue">
+                Increase your credibility by getting the most stunning,
+                high-quality photos that improve your business image.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -195,7 +209,11 @@
         <p>
           Challenge by
           <a href="#" class="attribution__link">Frontend Mentor</a> Coded By
-          <a href="#" class="attribution__link">Karl Matthews</a>
+          <a
+            href="https://github.com/karmatt?tab=repositories"
+            class="attribution__link"
+            >Karl Matthews</a
+          >
         </p>
       </div>
     </footer>

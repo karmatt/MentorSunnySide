@@ -4,5 +4,5 @@ function App() {
 }
 const app = new App();
 app.hamburger.onclick = () => {
-  app.nav.classList.toggle("nav--hidden");
+  app.nav.classList.toggle("nav--closed");
 }
